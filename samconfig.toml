@@ -1,0 +1,9 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "factorio-prints"
+s3_bucket = ${{ secrets.BUCKET_NAME }}
+s3_prefix = "factorio-prints"
+region = "eu-central-1"
+capabilities = "CAPABILITY_IAM"
